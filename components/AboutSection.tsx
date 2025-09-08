@@ -56,10 +56,10 @@ const AboutSection = () => {
             </p>
             <br />
             <p>
-              I'm driven by a relentless pursuit of excellence and a deep passion for pushing technological boundaries. My career has been defined by <span className="font-bold text-gray-500">
+              I&apos;m driven by a relentless pursuit of excellence and a deep passion for pushing technological boundaries. My career has been defined by <span className="font-bold text-gray-500">
                  continuous growth
               </span>
-              , consistently delivering innovative solutions that drive business impact. I thrive on complex challenges and leverage my expertise to architect robust systems that stand the test of scale. With a proven track record of success, I'm committed to leading by example and mentoring the next generation of engineers.
+              , consistently delivering innovative solutions that drive business impact. I thrive on complex challenges and leverage my expertise to architect robust systems that stand the test of scale. With a proven track record of success, I&apos;m committed to leading by example and mentoring the next generation of engineers.
             </p>
           </div>
           <div className="text-center md:w-1/2 md:text-left">
