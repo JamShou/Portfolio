@@ -3,7 +3,8 @@ import React from "react";
 import Image from "next/image";
 import { Link } from "react-scroll/modules";
 import { HiArrowDown } from "react-icons/hi";
-import { AiOutlineLinkedin } from "react-icons/ai";
+import { AiOutlineLinkedin, AiOutlineDownload } from "react-icons/ai";
+import { BsGithub } from "react-icons/bs";
 
 const HeroSection = () => {
   return (
@@ -25,45 +26,67 @@ const HeroSection = () => {
           <p className="text-lg mt-4 mb-6 md:text-2xl">
             I&#39;m a{" "}
             <span className="font-semibold text-gray-500">
-              Software Engineer{" "}
+              Senior Software Engineer{" "}
             </span>
             based in Dallas, TX. Working towards creating software that makes
             life easier and more meaningful for everyone.
           </p>
-          <div className=" flex flex-wrap flex-row justify-center z-10 md:justify-start px">
-          <a
-              href="https://www.linkedin.com/in/jamal-shoubaki/"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <AiOutlineLinkedin
-                color="white"
-                className=" hover:bg-gray-600 mr-2 mt-2 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100 bg-gray-500 rounded shadow"
-                size={50}
-              />
-            </a>
-            <Link
-              to="experience"
-              className="mr-2 mt-2 text-neutral-100 font-semibold px-6 py-3 bg-gray-500 rounded shadow hover:bg-gray-600 cursor-pointer"
-              activeClass="active"
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={500}
-            >
-              Experience
-            </Link>
-            <Link
-              to="projects"
-              className="mr-2 mt-2 text-neutral-100 font-semibold px-6 py-3 bg-gray-500 rounded shadow hover:bg-gray-600 cursor-pointer"
-              activeClass="active"
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={500}
-            >
-              Projects
-            </Link>
+          <div className="flex flex-wrap items-center gap-4 mt-8">
+            {/* Social Icons */}
+            <div className="flex space-x-4">
+              <a
+                href="https://www.linkedin.com/in/jamal-shoubaki/"
+                rel="noreferrer"
+                target="_blank"
+                className="flex items-center justify-center w-14 h-14 rounded-xl bg-gray-700 hover:bg-gray-600 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+                aria-label="LinkedIn"
+              >
+                <AiOutlineLinkedin size={28} className="text-white" />
+              </a>
+              <a
+                href="https://github.com/JamShou"
+                rel="noreferrer"
+                target="_blank"
+                className="flex items-center justify-center w-14 h-14 rounded-xl bg-gray-700 hover:bg-gray-600 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+                aria-label="GitHub"
+              >
+                <BsGithub size={28} className="text-white" />
+              </a>
+            </div>
+
+            {/* Action Buttons */}
+            <div className="flex flex-wrap gap-4">
+              <Link
+                to="experience"
+                className="px-8 py-4 text-lg font-semibold text-white bg-gray-700 rounded-xl shadow-lg hover:bg-gray-600 transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5 whitespace-nowrap"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+              >
+                Experience
+              </Link>
+              <Link
+                to="projects"
+                className="px-8 py-4 text-lg font-semibold text-white bg-gray-700 rounded-xl shadow-lg hover:bg-gray-600 transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5 whitespace-nowrap"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+              >
+                Projects
+              </Link>
+              <a
+                href="/Resume.pdf"
+                download
+                className="flex items-center px-8 py-4 text-lg font-semibold text-white bg-gray-700 rounded-xl shadow-lg hover:bg-gray-600 transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5 whitespace-nowrap"
+              >
+                <span>Resume</span>
+                <AiOutlineDownload className="ml-3" size={20} />
+              </a>
+            </div>
           </div>
         </div>
       </div>
