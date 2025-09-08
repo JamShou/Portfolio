@@ -4,7 +4,11 @@ import Image from "next/image";
 const skills = [
   { skill: "Spring Boot" },
   { skill: "Java" },
+  { skill: "Python" },
   { skill: "SQL" },
+  { skill: "AWS" },
+  { skill: "Spinnaker" },
+  { skill: "Jenkins" },
   { skill: "Git" },
   { skill: "Agile" },
   { skill: "GitHub" },
@@ -33,7 +37,7 @@ const AboutSection = () => {
               Hi, my name is Jamal and I am a{" "}
               <span className="font-bold text-gray-500">{"highly ambitious"}</span>,
               <span className="font-bold text-gray-500">{" self-motivated"}</span>, and
-              <span className="font-bold text-gray-500">{" driven"}</span> software engineer
+              <span className="font-bold text-gray-500">{" driven"}</span> senior software engineer
               based in Dallas, TX.
             </p>
             <br />
@@ -52,14 +56,10 @@ const AboutSection = () => {
             </p>
             <br />
             <p>
-              I believe everyone should{" "}
-              <span className="font-bold text-gray-500">
-                never stop growing
-              </span>{" "}
-              and that&#39;s what I strive to do, I have a passion for
-              technology and a desire to always push the limits of what is
-              possible. I am excited to see where my career takes me and am
-              always open to new opportunities.
+              I&apos;m driven by a relentless pursuit of excellence and a deep passion for pushing technological boundaries. My career has been defined by <span className="font-bold text-gray-500">
+                 continuous growth
+              </span>
+              , consistently delivering innovative solutions that drive business impact. I thrive on complex challenges and leverage my expertise to architect robust systems that stand the test of scale. With a proven track record of success, I&apos;m committed to leading by example and mentoring the next generation of engineers.
             </p>
           </div>
           <div className="text-center md:w-1/2 md:text-left">
